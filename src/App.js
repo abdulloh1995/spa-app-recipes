@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Movie from "./pages/Movie";
+import Category from "./pages/Category";
+import Recipe from "./pages/Recipe";
 
 function App() {
     return (
@@ -16,8 +17,9 @@ function App() {
                     <Route exact path="/" component={Home}/>
                     <Route path="/about" component={About}/>
                     <Route path="/contact" component={Contact}/>
-                    <Route path="/movies/:id" component={Movie} />
-                    <Route component={NotFound} />
+                    <Route path="/category/:name" component={Category}/>
+                    <Route path="/meal/:id" component={Recipe}/>
+                    <Route component={NotFound}/>
                 </Switch>
             </main>
             <Footer/>

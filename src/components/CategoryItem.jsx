@@ -13,7 +13,7 @@ const CategoryItem = (props) => {
                 <p>{strCategoryDescription.slice(0, 60)}...</p>
             </div>
             <div className="card-action">
-                <Link to={`/category/${idCategory}`} className="btn">Watch category</Link>
+                <Link to={`/category/${strCategory}`} className="btn">Watch category</Link>
             </div>
         </div>
     );
